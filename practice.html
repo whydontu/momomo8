@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практическая работа №8</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="student-template.js" defer></script>
+  <script src="browser-practice-template.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Практическая работа №8</h1>
+
+    <section class="panel">
+      <h2>1. Счётчик</h2>
+      <button id="counter-button" type="button">+1</button>
+      <strong id="counter-value">0</strong>
+    </section>
+
+    <section class="panel">
+      <h2>2. Предпросмотр</h2>
+      <label>Введите имя <input id="name-input" type="text"></label>
+      <p>Результат: <strong id="name-preview">—</strong></p>
+    </section>
+
+    <section class="panel">
+      <h2>3. Делегирование событий</h2>
+      <ul id="task-list">
+        <li>Повторить DOM <button class="remove-button" type="button">Удалить</button></li>
+        <li>Разобрать события <button class="remove-button" type="button">Удалить</button></li>
+        <li>Заполнить форму <button class="remove-button" type="button">Удалить</button></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>4–6. Форма регистрации</h2>
+      <form id="registration-form" novalidate>
+        <label>Имя <input name="name" type="text"></label>
+        <label>Email <input name="email" type="email"></label>
+        <label>Возраст <input name="age" type="number"></label>
+        <label>Курс
+          <select name="course">
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="design">Web Design</option>
+          </select>
+        </label>
+        <label class="checkbox"><input name="agree" type="checkbox"> Согласен с условиями</label>
+        <button type="submit">Отправить</button>
+      </form>
+      <ul id="form-errors" class="errors"></ul>
+      <p id="form-result" class="success"></p>
+    </section>
+  </main>
+</body>
+</html>
